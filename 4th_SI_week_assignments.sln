@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDynamic", "DemoDynamic\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCustomEventLog", "CreateCustomEventLog\CreateCustomEventLog.csproj", "{02E9EEC4-3E8C-4283-A1A9-DDF72B28CF40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateAndUseApplicationEventLog", "CreateAndUseApplicationEventLog\CreateAndUseApplicationEventLog.csproj", "{3E12830F-1D9D-4931-9465-DD43BCF0E09A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{02E9EEC4-3E8C-4283-A1A9-DDF72B28CF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E9EEC4-3E8C-4283-A1A9-DDF72B28CF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E9EEC4-3E8C-4283-A1A9-DDF72B28CF40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E12830F-1D9D-4931-9465-DD43BCF0E09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E12830F-1D9D-4931-9465-DD43BCF0E09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E12830F-1D9D-4931-9465-DD43BCF0E09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E12830F-1D9D-4931-9465-DD43BCF0E09A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
