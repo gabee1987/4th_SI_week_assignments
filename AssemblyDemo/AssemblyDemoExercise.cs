@@ -9,8 +9,8 @@ namespace AssemblyDemo
         {
             // Load a specific Assembly
             string longName = "system, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089";
-            Assembly a = LoadSystemAssembly(longName);
-            ShowAssemblyInfo(a);
+            Assembly assembly = LoadAssembly(longName);
+            ShowAssemblyInfo(assembly);
 
             // Get our Assembly
             Assembly ourAssembly = Assembly.GetExecutingAssembly();
@@ -23,40 +23,40 @@ namespace AssemblyDemo
         /// <summary>
         /// Print out a specific Assembly details
         /// </summary>
-        /// <param name="a">The Assembly object</param>
-        static void ShowAssemblyInfo(Assembly a)
+        /// <param name="assembly">The Assembly object</param>
+        static void ShowAssemblyInfo(Assembly assembly)
         {
             // Print out the Assembly name
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Assembly FullName:   ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(a.FullName);
+            Console.Write(assembly.FullName);
             Console.WriteLine();
 
             // Print out the Assembly cache
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("From GAC?            ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(a.GlobalAssemblyCache);
+            Console.Write(assembly.GlobalAssemblyCache);
             Console.WriteLine();
 
             // Print out the Assembly location
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Path:                ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(a.Location);
+            Console.Write(assembly.Location);
             Console.WriteLine();
 
             // Print out the Assembly version
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Version:             ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(a.ImageRuntimeVersion);
+            Console.Write(assembly.ImageRuntimeVersion);
             Console.WriteLine();
             Console.ResetColor();
 
             // Print out the modules
-            foreach (Module m in a.GetModules())
+            foreach (Module m in assembly.GetModules())
             {
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("Mod:                 ");
@@ -76,7 +76,7 @@ namespace AssemblyDemo
         /// </summary>
         /// <param name="path">The path of the assembly file</param>
         /// <returns>Assembly object</returns>
-        static Assembly LoadSystemAssembly(string path)
+        static Assembly LoadAssembly(string path)
         {
             Assembly assem = Assembly.Load(path);
             if (assem == null)
