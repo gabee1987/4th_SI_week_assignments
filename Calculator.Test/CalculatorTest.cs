@@ -8,7 +8,7 @@ namespace Calculator.Tests
 
         ICalculator sut;
 
-        [TestFixtureSetUp]
+        [SetUp]
         public void TestSetup()
         {
             sut = new Calculator();
@@ -28,7 +28,7 @@ namespace Calculator.Tests
             Assert.That(expectedResult, Is.EqualTo(56));
         }
 
-        [TestFixtureTearDown]
+        [TearDown]
         public void TestTearDown()
         {
             sut = null;
