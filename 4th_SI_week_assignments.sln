@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyAttrDemo", "Assembl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyDumpInfoDemo", "AssemblyDumpInfoDemo\AssemblyDumpInfoDemo.csproj", "{05CB5B55-B633-4E0B-8B58-8C8672FE04DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCodeDemo", "DynamicCodeDemo\DynamicCodeDemo.csproj", "{2707F3B8-F779-4D74-AFA8-FB8BFB47EBDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{05CB5B55-B633-4E0B-8B58-8C8672FE04DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05CB5B55-B633-4E0B-8B58-8C8672FE04DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05CB5B55-B633-4E0B-8B58-8C8672FE04DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2707F3B8-F779-4D74-AFA8-FB8BFB47EBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2707F3B8-F779-4D74-AFA8-FB8BFB47EBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2707F3B8-F779-4D74-AFA8-FB8BFB47EBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2707F3B8-F779-4D74-AFA8-FB8BFB47EBDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
